@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfNetCoreVSPre.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfNetCoreVSPre"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"
+        Title="MainWindow" Height="450" Width="800">
+   <StackPanel>
+      <materialDesign:Card Margin="5">
+         <TextBlock Text="" x:Name="tbSelected" FontSize="72" Margin="5"/>
+      </materialDesign:Card>
+      <Button Content="Select Center"  Click="ButtonSelectCenter_Click" Margin="5"/>
+      <Button Click="ButtonSelectLast_Click" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Margin="5">
+         <materialDesign:PackIcon Kind="PageLast"/>
+      </Button>
+   </StackPanel>
+</Window>
